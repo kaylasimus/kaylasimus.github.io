@@ -4,6 +4,7 @@
 Game where the player guesses a random number.
 
 - Basic Features: Random number generation, input form, feedback (higher/lower).
+- Later proper directions that each guess is a differnt number, let's see how many times you're willing to try thinking of the same number!
 
 - Enhanced Features: Score tracking, limited attempts, hint system.
 
