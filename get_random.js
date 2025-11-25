@@ -23,9 +23,24 @@ function random_num() {
     // assign num to the random number
     num.innerText = random;
 
+    // get user num and compare
+    let user_ans = document.getElementById('user_num');
+    let results_mssg = document.getElementById('result');
     // change image depending on results
     let react = document.getElementById('result_image');
-    react.src="images/hampter_write.png";
+    if(user_ans.value == random){
+        results_mssg.innerText="That's right!";
+        react.src="images/hampter_giddy.png";
+    }
+    else{
+        results_mssg.innerText="That's wrong...";
+        react.src="images/hampter_upset.png";
+    }
+
+    // check guess value
+    /*let guess = document.getElementById('user_guess');
+    guess.innerText = user_ans.value;
+     */
 
     // change button, invite user to guess again
     let u_button = document.getElementById('user_button');
