@@ -26,18 +26,28 @@ function random_num() {
     // get user num and compare
     let user_ans = document.getElementById('user_num');
     let results_mssg = document.getElementById('result');
+    let high_low_mssg = document.getElementById('high/low');
+
     // change image depending on results
     let react = document.getElementById('result_image');
     if(user_ans.value == random){
         results_mssg.innerText="That's right!";
         react.src="images/hampter_giddy.png";
+        high_low_mssg.innerText="You got the exact number!";
     }
     else{
         results_mssg.innerText="That's wrong...";
         react.src="images/hampter_upset.png";
+
+        if (user_ans.value > random){
+            high_low_mssg.innerText="My number is lower than that...";
+        }
+        else if (user_ans.value < random){
+            high_low_mssg.innerText="My number is higher than that...";
+        }
     }
 
-    // check guess value
+    // check guess value (for testing)
     /*let guess = document.getElementById('user_guess');
     guess.innerText = user_ans.value;
      */
