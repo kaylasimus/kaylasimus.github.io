@@ -2,26 +2,29 @@
 <html>
     <head>
         <title>Guessing Number Game</title>
+
     </head>
     <body style="background-color: beige">
-        <h1 style="text-align: center; color: darkorange";>
-            Guess the Number</h1>
-        <h2 style="text-align: center;";>
-            A small game where you guess a number between 1-10. Let's see if you can guess right!</h2>
-        <p>
-            I'm thinking of a number... Do you know what it is?
-        </p>
-        <form action ="" method="get">
-            <input id="user_num" type="number" placeholder="Number between 1-10" min="1" max="10"></br>
-            <input id="user_button" type="button" value="Guess!" onclick="random_num()"></br>
-        </form>
+        <div class="container" style="text-align: center">
+            <h1 style="color: darkorange";>
+                Guess the Number</h1>
+            <h2>
+                A small game where you guess a number between 1-10. Let's see if you can guess right!</h2>
+            <p>
+                I'm thinking of a number... Do you know what it is?
+            </p>
+            <form action ="" method="get">
+                <input id="user_num" type="number" placeholder="Number between 1-10" min="1" max="10"></br>
+                <input id="user_button" type="button" value="Guess!" onclick="random_num()"></br>
+            </form>
 
-        <p id="result"></p>
-        <p id="the_number"></p>
-        <p id="high/low"></p>
-        <script src="get_random.js"></script>
+            <p id="result"></p>
+            <p id="the_number"></p>
+            <p id="high/low"></p>
+            <script src="get_random.js"></script>
 
-        <img id="result_image" src="images/hampter.png" alt="idle placeholder" width="400">
+            <img id="result_image" src="images/hampter.png" alt="idle placeholder" width="400">
+        </div>
     </body>
 
 </html>
