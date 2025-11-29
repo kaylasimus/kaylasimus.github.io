@@ -2,18 +2,31 @@
 <html>
     <head>
         <title>Guessing Number Game</title>
+        <style>
+            .container{
+                text-align: center;
+                border: 12px solid ghostwhite;
+                border-style: double;
+                border-radius: 50px;
+            }
 
+            .input_border{
+                width: 400px;
+                border: 3px solid black;
+                border-style: double;
+            }
+        </style>
     </head>
     <body style="background-color: beige">
-        <div class="container" style="text-align: center">
-            <h1 style="color: darkorange";>
+        <div class="container">
+            <h1 style="color: #FFA65E";>
                 Guess the Number</h1>
             <h2>
                 A small game where you guess a number between 1-10. Let's see if you can guess right!</h2>
             <p>
                 I'm thinking of a number... Do you know what it is?
             </p>
-            <form action ="" method="get" border="3px">
+            <form action ="" method="get">
                 <input id="user_num" type="number" placeholder="Number between 1-10" min="1" max="10"></br>
                 <input id="user_button" type="button" value="Guess!" onclick="random_num()"></br>
             </form>
