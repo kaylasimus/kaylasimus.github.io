@@ -24,6 +24,14 @@
                 border-radius: 50px;
                 color: #FF9A47;
             }
+
+            .gen_number{
+                position: absolute;
+                top: 30%;
+                left: 730px;
+                font-size: 100px;
+            }
+
         </style>
     </head>
     <body style="background-color: beige">
@@ -45,12 +53,19 @@
                 <input id="user_button" type="button" value="Guess!" onclick="random_num()"></br>
             </form>
 
-            <p id="result"></p>
-            <p id="high/low"></p>
-            <p id="the_number"></p>
+            <p id="result"></p> <p id="high/low"></p>
+
+
             <script src="get_random.js"></script>
 
-            <img id="result_image" src="images/hampter.png" alt="idle placeholder" width="400">
+            <img id="result_image" src="images/hampter.png" alt="idle placeholder" width="350">
+            <div class="gen_number">
+                <p id="the_number"></p>
+            </div>
+
+
+
+
 
         </div>
 
