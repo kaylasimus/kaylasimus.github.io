@@ -8,7 +8,7 @@ Game where the player guesses a random number between 1-10.
   - I unfortunately couldn't figure out how to allow the player to keep guessing until the right number is guessed in one loop, so each loop generates a different number.
     
 - The generated number is displayed, which changes each time the button is pressed.
-- The image also changes depending on if the user guesses the right or wrong number.
+- The image also changes depending on if the user guesses the right or wrong number (drawn by myself).
 - Output displays feedback for the guess, if it is higher or lower than the generated number.
   
 <img src="images/right_guess_output.png" alt="Correct Guess" width="300"/> <img src="images/wrong_guess_output.png" alt="Incorrect Guess, Higher Feedback" width="327"/>
