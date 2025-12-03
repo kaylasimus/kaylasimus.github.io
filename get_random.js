@@ -41,14 +41,14 @@ function random_num() {
     // each guess means the score continues to add
     if(user_ans.value == random){
         results_mssg.innerText="That's right!";
-        react.src="images/hampter_giddy.png";
+        react.src="images/tochi_right.png";
         high_low_mssg.innerText="You got the exact number!";
         points.value+= 1;
     }
     else{
 
         results_mssg.innerText="That's wrong...";
-        react.src="images/hampter_upset.png";
+        react.src="images/tochi_wrong.png";
 
         if (user_ans.value > random){
             high_low_mssg.innerText="My number is lower than that...";
