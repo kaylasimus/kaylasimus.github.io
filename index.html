@@ -12,13 +12,23 @@
             }
 
             .score_tracker{
-                width: 400px;
-                border: 3px solid black;
+                background-color: beige;
+                position: fixed;
+                top: 80px;
+                right: 40px;
+                width: 200px;
+                border: 12px solid white;
                 border-style: double;
+                text-align: center;
+                border-radius: 50px;
             }
         </style>
     </head>
     <body style="background-color: beige">
+        <div class="score_tracker">
+            <h2> Score</h2>
+            <h3 id="score" value=0>0</h3>
+        </div>
         <div class="container">
             <h1 style="color: #FFA65E";>
                 Guess the Number</h1>
@@ -38,7 +48,10 @@
             <script src="get_random.js"></script>
 
             <img id="result_image" src="images/hampter.png" alt="idle placeholder" width="400">
+
         </div>
+
+
     </body>
 
 </html>

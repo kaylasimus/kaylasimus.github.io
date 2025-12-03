@@ -30,12 +30,20 @@ function random_num() {
 
     // change image depending on results
     let react = document.getElementById('result_image');
+
+    // get score and it will change depending on if user gets their guess right
+    let points = document.getElementById('score');
+
+
+    // each guess means the score continues to add
     if(user_ans.value == random){
         results_mssg.innerText="That's right!";
         react.src="images/hampter_giddy.png";
         high_low_mssg.innerText="You got the exact number!";
+        points.value+= 1;
     }
     else{
+
         results_mssg.innerText="That's wrong...";
         react.src="images/hampter_upset.png";
 
@@ -47,12 +55,11 @@ function random_num() {
         }
     }
 
+    points.innerText = points.value;
     // check guess value (for testing)
-    /*let guess = document.getElementById('user_guess');
+    let guess = document.getElementById('user_guess');
     guess.innerText = user_ans.value;
-     */
 
-    // change button, invite user to guess again
-    let u_button = document.getElementById('user_button');
-    u_button.value="Guess Again!";
+
+
 }
