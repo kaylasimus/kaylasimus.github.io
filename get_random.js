@@ -40,14 +40,14 @@ function random_num() {
 
     // each guess means the score continues to add
     if(user_ans.value == random){
-        results_mssg.innerText="That's right!";
+        results_mssg.innerText="Wow, that's right.";
         react.src="images/tochi_right.png";
-        high_low_mssg.innerText="You got the exact number!";
+        high_low_mssg.innerText="We got the same number.";
         points.value+= 1;
     }
     else{
 
-        results_mssg.innerText="That's wrong...";
+        results_mssg.innerText="Sorry, that's wrong...";
         react.src="images/tochi_wrong.png";
 
         if (user_ans.value > random){
