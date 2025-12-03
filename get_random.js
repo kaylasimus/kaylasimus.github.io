@@ -12,6 +12,10 @@
 }
  */
 
+// get score and it will change depending on if user gets their guess right
+let points = document.getElementById('score');
+// declare value outside random_num function so that it exists outside function scope
+points.value = 0;
 
 // take in user input to compare
 function random_num() {
@@ -31,8 +35,7 @@ function random_num() {
     // change image depending on results
     let react = document.getElementById('result_image');
 
-    // get score and it will change depending on if user gets their guess right
-    let points = document.getElementById('score');
+
 
 
     // each guess means the score continues to add
