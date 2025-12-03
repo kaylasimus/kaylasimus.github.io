@@ -14,5 +14,6 @@ Game where the player guesses a random number between 1-10.
 <img src="images/right_guess_output.png" alt="Correct Guess" width="300"/> <img src="images/wrong_guess_output.png" alt="Incorrect Guess, Higher Feedback" width="327"/>
 
 - There is a score tracker to keep track of how many times the user was able to guess the correct number.
+- 
 <img src="images/score_output1.png" alt="Score at 0" width="300"/> <img src="images/score_output2.png" alt="Score at 6" width="316"/>
 
